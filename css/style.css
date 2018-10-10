@@ -1,0 +1,423 @@
+/* Global Styles */
+body {
+	background-color: #FFF;
+	font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	overflow-y: scroll;
+	width: 100%;
+}
+
+h1 {
+	font-family: 'Crete Round', serif;
+	font-weight: bold;
+	color: #444;
+	font-size: 25px;
+}
+
+h2 {
+	font-family: 'Crete Round', serif;
+	font-weight: bold;
+	color: #444;
+	font-size: 20px;
+}
+
+h3 { 
+	font-weight: bold;
+}
+
+p {
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+
+.wrapper {
+	margin: 0 15px;
+}
+
+.hiddendetails {
+	display: none;
+}
+
+.onequarter {
+	width: 22%;
+	float: left;
+}
+
+/* Remove hyperlink decoration */
+a, .cleanlinkonly a {
+	text-decoration: none;
+	color: #000;
+}
+
+
+
+/* header */
+header {
+	width: 100%;
+	height: 40px;
+	background-color: #1664c2;
+	margin: auto;
+	text-align: center;
+}
+
+header img {
+	height: 40px;
+}
+
+header .cleanlinkonly .description {
+		max-width: 200px;
+	}
+
+/* body */
+
+.bodybackground {
+	background-image: url("https://images.unsplash.com/photo-1494859802809-d069c3b71a8a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=304a04115ffd171fdcc04a834afff74c&auto=format&fit=crop&w=2550&q=80");
+	background-position: center;
+	position: relative;
+	background-size: cover;
+}
+/*
+	background-repeat: no-repeat;
+	background-size: cover;
+*/
+
+.substicky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	text-align: center;
+	background-color: #fff;
+	border-bottom: solid #e7e7e7 1px;
+	height: 22px;
+}
+
+.mainnav ul li a:hover {
+	border-bottom: solid #444 2px;
+}
+
+.mainnav .current a, .mainnav .current a:hover {
+	font-weight: bold;
+	border-bottom: solid #1664c2 2px;
+}
+
+
+/* Item */
+.item {
+	width: 100%;
+	min-height: 100px;
+	border: solid #e7e7e7 1px;
+	margin: 10px auto auto;
+}
+
+.item img {
+	height: 100px;
+	min-width: 100px;
+	max-width: 20%;
+	float: left;
+}
+
+.item .details {
+	float: left;
+	width: 65%;
+	height: 100%;
+	max-height: 100px;
+	text-align: center;
+}
+
+.item .detailsonly {
+	float: left;
+	width: 100%;
+	height: 70px;
+	text-align: center;
+}
+
+.item .detailsnotonlyimg {
+	float: left;
+	width: 30%;
+}
+
+.item .detailsnotonly {
+	float: left;
+	width: 70%;
+}
+
+.item .edit {
+	float: left;
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border-top: solid #e7e7e7 1px;
+}
+
+
+.item .details .description, .item .detailsonly .description, .item .detailsnotonly .description {
+	margin: 20px auto 5px;
+	font-size: 115%;
+	font-weight: bold;
+}
+
+.detailsonly .description, .detailsonly .subdescription {
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+
+/* Profile */
+
+.profile {
+	height: 100px;
+	width: 100%;
+	text-align: center;
+}
+
+.profile img {
+	height: 100px;
+	float: left;
+}
+
+.profile .details {
+	float: left;
+	margin-left: 10px;
+}
+
+.profile .description {
+	font-weight: bold;
+}
+
+/*= login =*/
+.logincontainer {
+	width: 90%;
+	min-height: 500px;
+	margin: 25px 10px;
+	margin: 100px auto 0;
+	
+}
+.nsfclogo{
+	position: relative;
+	text-align: center;
+	margin: 25px 10px;
+}
+#NSFCtext{
+	font-weight: bold; 
+	color: #0462D4; 
+	font-size: 25px;
+}
+#whoareu{
+	text-align: center;
+	font-size: 25px;
+	color: #144397;
+	font-family: 'Trebuchet MS';
+}
+
+.logincontainerheader {
+	width: 100%;
+	height: 75px;
+	text-align: center;
+}
+
+.logincontainerbody {
+	text-align: center;
+	padding-top: 50px;
+	margin: 25px 10px;
+	font-size: 23px;
+	font-family:'Trebuchet MS';
+}
+
+/* form */
+
+form .field {
+	margin: 10px auto auto;
+}
+
+form .field .label {
+	width: 40%;
+	min-width: 90px;
+	float: left;
+}
+
+form .field input, form .field select {
+	width: 40%;
+	min-width: 130px;
+}
+
+.profileinfo .label {
+	width: 45%;
+	min-width: 90px;
+	display: inline-block;
+}
+
+.profileinfo .info {
+	width: 45%;
+	min-width: 130px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+/*= button =*/
+.buttonlargesubmit {
+	width: 30%;
+	color: #144397;
+	background-color: #76D6DF;
+	margin: 10px auto auto;
+	padding: 10px 0;
+	border-radius: 12px;
+	text-align: center;
+}
+
+.buttonlargesubmit:hover {
+	color: #FFF;
+	background-color: #1664C2;
+	cursor: pointer;
+}
+
+.buttonlargecancel {
+	background-color: #e5e4e2;
+	/*font-size: 85%;*/
+}
+
+
+/* Item List */
+.itemlistrecord {
+	width: 100%;
+	border: 1px solid #e7e7e7;
+    border-radius: 12px;
+	margin-bottom: 2px;
+}
+
+.itemlistrecord .itemlistitem {
+	float: left;
+	margin-left: 7px;
+	width: 55%;
+}
+
+.itemlistrecord .itemlistqty {
+	float: left;
+	width: 15%;
+	text-align: center;
+}
+
+.itemlistrecord .itemlistremove, .itemlistrecord .itemlistprice {
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+
+/* Order */
+.orderorange {
+	border: 1px solid #F39C12;
+    border-radius: 12px;
+	margin-bottom: 2px;
+	padding: 0 7px;
+	background-color: #F8C471;
+	margin-bottom: 5px;
+}
+
+.ordergreen {
+	border: 1px solid #2ECC71;
+    border-radius: 12px;
+	margin-bottom: 2px;
+	padding: 0 7px;
+	background-color: #82E0AA;
+	margin-bottom: 5px;
+}
+
+/* Me Setting List */
+.settinglist {
+	background-color: #fff;
+	line-height: 28px;
+}
+
+.settinglist ul li {
+	height: 28px;	
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.settinglist ul li a {
+	display: block;
+	padding: 0 15px;
+}
+
+.settinglist ul li a:hover {
+	background-color: #444;
+	color: #FFF;
+}
+
+.settinglist .current a, .settinglist .current a:hover {
+	background-color: #02b8dd;
+	color: #FFF;
+}
+
+
+
+/* footer */
+
+/*footer {
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:60px;
+}
+
+footer {
+	border-top: solid #e7e7e7 1px;
+	background-color: #FFF;
+	padding: 10px 0;
+	width: 100%;
+	margin-top: 10px;
+}*/
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+	
+	/*= login =*/
+	.logincontainer {
+		width: 800px;
+		min-height: 400px;
+		
+	}
+	
+	.cleanlink { /* replaced item */
+		width: 48%;
+		margin: 10px 5px auto;
+		display: inline-block;
+		/*float: left;*/
+	}
+	
+	.profile {
+		max-width: 900px;
+		margin: auto;
+	}
+	
+	form .field {
+		width: 48%;
+		display: inline-block;
+		/*float: left;*/
+	}
+	
+	.containerboundary  {
+		max-width: 900px;
+		margin: auto;
+	}
+	
+}
+
+@media screen and (min-width: 1024px) {
+		
+	.cleanlink { /* replaced item */
+		width: 30%;
+		min-width: 325px;
+		max-width: 400px;
+	}
+	
+}
+
+
+
+
