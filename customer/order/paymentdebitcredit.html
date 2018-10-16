@@ -5,12 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Schyler</title>
 	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
-    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../css/signup.css">
     <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 </head>
-<body>
+<body class="bodybackground">
 	<div class="containerboundary">
+			<div class="logincontainerheader">
+					<img src="../../img/nsfc_transp.png" style="height:75px;">
+				</div>
 		<div class="wrapper" style="paddingtop:20px;">
 			<h2>Payment - Debit / Credit Card</h2>
 			
@@ -27,27 +31,27 @@
 				<br>
 				<div class="field">
 					<div class="label"><label for="nameoncard">Name on Card:</label></div>
-					<input type="text" id="nameoncard" name="nameoncard" required>
+					<input type="text" id="input-field" name="nameoncard" required>
 				</div>
 				<div class="field">
 					<div class="label"><label for="cardnumber">Card Number:</label></div>
-					<input type="text" id="cardnumber" name="cardnumber" required>
+					<input type="text" id="input-field" name="cardnumber" required>
 				</div>
 				<div class="field">
 					<div class="label"><label for="expirydate">Expiry Date:</label></div>
-					<input type="text" id="expirydate" name="expirydate" placeholder="MM/YY" required>
+					<input type="text" id="input-field" name="expirydate" placeholder="MM/YY" required>
 				</div>
 				<div class="field">
 					<div class="label"><label for="securitycode">Security Code:</label></div>
-					<input type="text" id="securitycode" name="securitycode" required>
+					<input type="text" id="input-field" name="securitycode" required>
 				</div>
 				<div class="hiddendetails">
 					<input type="text" name="clientid" value="<?php //echo $clientid;?>">
 				</div>
-				<input type="submit" name="pay" value="Pay" class="buttonlargesubmit">
+				
 			</form>
-			
-			<a href=""><div class="buttonlargesubmit buttonlargecancel" style="text-align: center;">Cancel</div></a>
+			<input type="submit" name="pay" value="Pay" class="buttonlargesubmit">
+			<a href=""><input type="submit" name="cancel" value="Cancel" class="buttonlargesubmit"></a>
 			
 		</div>
 	</div>

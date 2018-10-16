@@ -9,20 +9,23 @@
     <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 </head>
-<body>
+<body class="bodybackground">
 	<div class="containerboundary">
+			<div class="logincontainerheader">
+					<img src="../../img/nsfc_transp.png" style="height:75px;">
+				</div>
 		<div class="wrapper" style="paddingtop:20px;">
-			<h2>Update - Last Name</h2>
+			<h2>Update - Birthday</h2>
 			
 			<form action="" method="post">
 				<div class="field">
-					<div class="label"><label for="email">Email:</label></div>
-					<input type="email" id="email" name="email" required>
+					<div class="label"><label for="birthday">Birthday:</label></div>
+					<input type="date" id="input-field" name="birthday" required>
 				</div>
-				<input type="submit" name="save" value="Save" class="buttonlargesubmit">
+				
 			</form>
-			
-			<a href=""><div class="buttonlargesubmit buttonlargecancel" style="text-align: center;">Cancel</div></a>
+			<input type="submit" name="save" value="Save" class="buttonlargesubmit">
+			<a href=""><input type="submit" name="cancel" value="Cancel" class="buttonlargesubmit"></a>
 			
 		</div>
 	</div>

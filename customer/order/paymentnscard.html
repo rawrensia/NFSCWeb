@@ -9,9 +9,12 @@
     <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 </head>
-<body>
+<body class="bodybackground">
 	<div class="containerboundary">
-		<div class="wrapper" style="paddingtop:20px;">
+			<div class="logincontainerheader">
+					<img src="../../img/nsfc_transp.png" style="height:75px;">
+				</div>
+		<div class="wrapper" style="paddingtop:50px;">
 			<h2>Payment - NS Card</h2>
 			
 			<!--<form action="addpoc2.php?id=<?php echo $clientid;?>" method="post">-->
@@ -79,13 +82,13 @@
 					<input type="text" name="clientid" value="<?php //echo $clientid;?>">
 				</div>
 				<!-- if balance is negative, hide pay button -->
-				<input type="submit" name="pay" value="Pay" class="buttonlargesubmit">
+				
 			</form>
 			
 			<!-- if balance is negative, show top up card button -->
 			<a href=""><div class="buttonlargesubmit" style="text-align: center; display:none;">Top Up Card</div></a>
-			
-			<a href=""><div class="buttonlargesubmit buttonlargecancel" style="text-align: center;">Cancel</div></a>
+			<input type="submit" name="pay" value="Pay" class="buttonlargesubmit">
+			<a href=""><input type="submit" name="cancel" value="Cancel" class="buttonlargesubmit"></a>
 			
 		</div>
 	</div>

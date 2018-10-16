@@ -6,6 +6,14 @@ if (!isset($_SESSION["vendor_managment"])) {
 }
 
 $vendorid = $_SESSION["vendor_storeID"];
+$storeid = $vendorid;
+
+if (!isset($_GET["id"]) || $_GET["id"] == null) {
+	header("Location: $r_vend_management_promo_index");
+}
+else {
+	$itemid = $_GET["id"];
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,23 +26,28 @@ $vendorid = $_SESSION["vendor_storeID"];
     <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
 </head>
-<body>
+<body class="bodyvendor">
 	<div class="containerboundary">
-		<div class="wrapper" style="paddingtop:20px;">
-			<h2>Update - Bank Account</h2>
-			
-			<form action="queries/setupdatebankacc.php" method="post">
-				<div class="field">
-					<div class="label"><label for="bankacc">Bank Acc:</label></div>
-					<input type="text" id="bankacc" name="bankacc" required>
+			<div class="logincontainerheader">
+					<img src="../../img/nsfc_transp.png" style="height:75px;">
 				</div>
-				<input type="submit" name="save" value="Save" class="buttonlargesubmit">
+		<div class="wrapper" style="paddingtop:20px;">
+			<h2>Notice</h2>
+			Are you sure you want to add the item to promotion?
+			<!-- Form -->
+			<form action="queries/setaddpromoitem.php" method="post">
+				<div class="hiddendetails">
+					<input type="text" name="itemid" value="<?php echo $itemid;?>">
+				</div>
+				<input type="submit" name="yes" value="Yes" class="buttonlargesubmit">
 			</form>
+			
+			<!--<a href=""><div class="buttonlargesubmit buttonlargecancel" style="text-align: center;">Cancel</div></a>-->
 			
 			<button class="buttonlargesubmit buttonlargecancel" onclick="goBack()">Cancel</button>
 			<script>
 			function goBack() {
-				window.history.go(-1);
+				window.history.back();
 			}
 			</script>
 			

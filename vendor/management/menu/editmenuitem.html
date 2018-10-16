@@ -22,13 +22,14 @@ $storeid = $vendorid;
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Schyler</title>
 	<link rel="stylesheet" type="text/css" href="../../../css/reset.css">
-    <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/signup.css">
     <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
 </head>
-<body>
+<body class="bodyvendor">
 	<div class="logincontainerheader">
-		<img src="../../../img/NSFCW_logo.png" style="height:75px;">
+		<img src="../../../img/nsfc_transp.png" style="height:75px;">
 	</div>
 	
 	<div class="substicky">
@@ -66,15 +67,15 @@ $storeid = $vendorid;
 				<form action="queries/setupdatemenuitem.php" method="post">
 					<div class="field">
 						<div class="label"><label for="itemname">Item Name:</label></div>
-						<input type="text" id="itemname" name="itemname" value="<?php echo $itemname; ?>" required>
+						<input type="text" id="input-field" name="itemname" value="<?php echo $itemname; ?>" required>
 					</div>
 					<div class="field">
 						<div class="label"><label for="price">Price:</label></div>
-						<input type="number" id="price" name="price" min="0" step="0.01" value="<?php echo $price; ?>" required>
+						<input type="number" id="input-field" name="price" min="0" step="0.01" value="<?php echo $price; ?>" required>
 					</div>
 					<div class="field">
 						<div class="label"><label for="status">Status:</label></div>
-						<select id="status" name="status">
+						<select id="input-field" name="status">
 							<option value="1" <?php
 							if ($status == 1) {
 								echo "selected";

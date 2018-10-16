@@ -9,8 +9,12 @@
     <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 </head>
-<body>
+<body class="bodybackground">
 	<div class="containerboundary">
+			<div class="logincontainerheader">
+				<br>
+					<img src="../../img/nsfc_transp.png" style="height:75px;">
+				</div>
 		<div class="wrapper" style="paddingtop:20px;">
 			<h2>Check Out</h2>
 			
@@ -104,11 +108,10 @@
 				<div class="hiddendetails">
 					<input type="text" name="clientid" value="<?php //echo $clientid;?>">
 				</div>
-				<input type="submit" name="next" value="Next" class="buttonlargesubmit">
 			</form>
 			
-			
-			<a href=""><div class="buttonlargesubmit buttonlargecancel" style="text-align: center;">Cancel</div></a>
+			<input type="submit" name="next" value="Next" class="buttonsignin">
+			<a href=""><input type="submit" name="cancel" value="Cancel" class="buttonsignin"></a>
 			
 		</div>
 	</div>

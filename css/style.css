@@ -260,7 +260,8 @@ header .cleanlinkonly .description {
 /*LA*/
 .label {
 
-	
+	color: #144397;
+	font-family: 'Trebuchet MS';
 	margin: 10px auto auto;
 	display: inline-block;
 	text-align: left;
@@ -284,6 +285,13 @@ header .cleanlinkonly .description {
 	background-color:#C5EFF6;
 }
 
+#input-field{
+    border: none;
+	border-radius: 10px;
+	padding: 5px;
+	background-color:#C8F3F6;
+}
+
 form .field input, form .field select {
 	width: 40%;
 	min-width: 130px;
@@ -305,18 +313,18 @@ form .field input, form .field select {
 /*= button =*/
 /*LA*/
 .buttonlargesubmit{
-	display: block;
-	width: 170px;
-	color: #144397;
-	background-color: #76D6DF;
+	width: 80px;
+	color: #fff;
+	background-color: #2F58BB;
 	margin: 5px auto auto;
-	padding: 20px 0;
+	padding: 10px 0;
 	border-radius: 12px;
 	text-align: center;
+	font-weight: bold;
 }
 .buttonlargesubmit:hover{
-	color: #FFF;
-	background-color: #1664C2;
+	color:  #2F58bb;
+	background-color: #DCE760;
 	cursor: pointer;
 }
 .buttonsmallsubmit{
@@ -377,6 +385,7 @@ form .field input, form .field select {
 	padding: 10px;
     border-radius: 12px;
 	margin-bottom: 4px;
+	background-color: rgba(241, 233, 245, 0.7);
 }
 
 .itemlistrecord .itemlistitem {
@@ -420,10 +429,12 @@ form .field input, form .field select {
 .settinglist {
 	background-color: #fff;
 	line-height: 28px;
+	border-radius: 8px;
+	margin: 10px auto auto;
 }
 
 .settinglist ul li {
-	height: 28px;	
+	height: 30px;	
 	border-bottom: 1px solid #e7e7e7;
 }
 

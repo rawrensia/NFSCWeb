@@ -9,31 +9,24 @@
     <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 </head>
-<body>
+<body class="bodybackground">
 	<div class="containerboundary">
+			<div class="logincontainerheader">
+					<img src="../../img/nsfc_transp.png" style="height:75px;">
+				</div>
 		<div class="wrapper" style="paddingtop:20px;">
 			<h2>Update - Last Name</h2>
 			
 			<form action="" method="post">
 				<div class="field">
-					<div class="label"><label for="currentpass">Current:</label></div>
-					<input type="password" id="currentpass" name="currentpass" required>
+					<div class="label"><label for="lastname">Last Name:</label></div>
+					<input type="text" id="input-field" name="lastname" required>
 				</div>
 				
-				<div class="field">
-					<div class="label"><label for="newpass">New:</label></div>
-					<input type="password" id="newpass" name="newpass" required>
-				</div>
-				
-				<div class="field">
-					<div class="label"><label for="newpass2">New Again:</label></div>
-					<input type="password" id="newpass2" name="newpass2" required>
-				</div>
-				<input type="submit" name="save" value="Save" class="buttonlargesubmit">
 			</form>
 			
-			<a href=""><div class="buttonlargesubmit buttonlargecancel" style="text-align: center;">Cancel</div></a>
-			
+			<input type="submit" name="save" value="Save" class="buttonlargesubmit">
+			<a href=""><input type="submit" name="cancel" value="Cancel" class="buttonlargesubmit"></a>
 		</div>
 	</div>
 	

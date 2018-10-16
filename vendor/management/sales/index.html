@@ -25,13 +25,14 @@ if(isset($_GET["searchfrom"]) && !empty($_GET["searchfrom"])) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Schyler</title>
 	<link rel="stylesheet" type="text/css" href="../../../css/reset.css">
-    <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/signup.css">
     <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
 </head>
-<body>
+<body class="bodyvendor">
 	<div class="logincontainerheader">
-		<img src="../../../img/NSFCW_logo.png" style="height:75px;">
+		<img src="../../../img/nsfc_transp.png" style="height:75px;">
 	</div>
 	
 	<div class="substicky">
@@ -55,11 +56,11 @@ if(isset($_GET["searchfrom"]) && !empty($_GET["searchfrom"])) {
 				<form action="" method="get">
 					<div class="field">
 						<div class="label"><label for="searchfrom">From:</label></div>
-						<input type="date" id="searchfrom" name="searchfrom" placeholder="dd/mm/yyyy" required>
+						<input type="date" id="input-field" name="searchfrom" placeholder="dd/mm/yyyy" required>
 					</div>
 					<div class="field">
 						<div class="label"><label for="searchto">To:</label></div>
-						<input type="date" id="searchto" name="searchto" placeholder="dd/mm/yyyy" required>
+						<input type="date" id="input-field" name="searchto" placeholder="dd/mm/yyyy" required>
 					</div>
 					<div class="hiddendetails">
 						<!--<input type="text" name="id" value="<?php echo $siteid;?>">-->
