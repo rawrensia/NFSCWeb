@@ -1,9 +1,10 @@
 .bodybackground {
 	background-image: url("https://images.unsplash.com/photo-1494859802809-d069c3b71a8a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=304a04115ffd171fdcc04a834afff74c&auto=format&fit=crop&w=2550&q=80");
 	background-position: center;
-	position: relative;
-    background-size: cover;
-    color: #0462D4;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+    color: #183E7E;
 }
 .field{
     margin: 5px auto auto;

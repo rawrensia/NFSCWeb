@@ -73,17 +73,23 @@ header .cleanlinkonly .description {
 .bodybackground {
 	background-image: url("https://images.unsplash.com/photo-1494859802809-d069c3b71a8a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=304a04115ffd171fdcc04a834afff74c&auto=format&fit=crop&w=2550&q=80");
 	background-position: center;
-	position: relative;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-size: cover;
 }
-/*
-	background-repeat: no-repeat;
-	background-size: cover;
-*/
+
 .bodyfood{
 	background-image: url("https://images.unsplash.com/photo-1495839760557-d150d64b4469?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7cef959884ac7ca5d7dcc8429290f3ed&auto=format&fit=crop&w=2250&q=80");
 	background-position: center;
-	position: relative;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.bodyvendor{
+	background-image: url("https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ea7aeb5fc4e3623a3f16af817ec12129&auto=format&fit=crop&w=1955&q=80");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-size: cover;
 }
 /*LA*/
@@ -218,6 +224,7 @@ header .cleanlinkonly .description {
 	margin: 25px 10px;
 	font-size: 23px;
 	font-family:'Trebuchet MS';
+	color: #183E7E;
 }
 /*LA*/
 .nsfclogo{
@@ -265,14 +272,14 @@ header .cleanlinkonly .description {
 	border: none;
 	border-radius: 13px;
 	padding: 7px;
-	background-color:#AFCAF9;
+	background-color:#C5EFF6;
 }
 /*LA*/
 #password{
 	border: none;
 	border-radius: 13px;
 	padding: 7px;
-	background-color:#AFCAF9;
+	background-color:#C5EFF6;
 }
 
 form .field input, form .field select {
@@ -314,7 +321,7 @@ form .field input, form .field select {
 	display: block;
 	width: 70px;
 	color: #144397;
-	background-color: #76D6DF;
+	background-color: #fff;
 	margin: 5px auto auto;
 	padding: 10px 0;
 	border-radius: 12px;
@@ -331,11 +338,13 @@ form .field input, form .field select {
 .buttonsignin {
 	width: 70px;
 	color: #144397;
-	background-color: #76D6DF;
+	background-color: #fff;
 	margin: 5px auto auto;
 	padding: 10px 0;
 	border-radius: 12px;
 	text-align: center;
+	font-weight: bold;
+
 }
 /*LA*/
 .buttonsignin:hover {
@@ -361,10 +370,11 @@ form .field input, form .field select {
 
 /* Item List */
 .itemlistrecord {
-	width: 100%;
-	border: 1px solid #e7e7e7;
+	width: 98%;
+	border: 2px solid #e7e7e7;
+	padding: 5px;
     border-radius: 12px;
-	margin-bottom: 2px;
+	margin-bottom: 4px;
 }
 
 .itemlistrecord .itemlistitem {
@@ -387,21 +397,21 @@ form .field input, form .field select {
 
 /* Order */
 .orderorange {
-	border: 1px solid #F39C12;
+	border: 1px solid rgba(221, 116, 178);
     border-radius: 12px;
-	margin-bottom: 2px;
+	margin: 14px auto auto;
 	padding: 0 7px;
-	background-color: #F8C471;
-	margin-bottom: 5px;
+	background-color: rgba(221, 116, 178, 0.7);
+	
 }
 
 .ordergreen {
-	border: 1px solid #2ECC71;
+	border: 1px solid #C5EFF6;
     border-radius: 12px;
-	margin-bottom: 2px;
+	margin: 14px auto auto;
 	padding: 0 7px;
-	background-color: #82E0AA;
-	margin-bottom: 5px;
+	background-color: rgba(197, 239, 246, 0.7);
+	
 }
 
 /* Me Setting List */
