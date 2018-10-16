@@ -9,19 +9,20 @@ body {
 h1 {
 	font-family: 'Crete Round', serif;
 	font-weight: bold;
-	color: #444;
+	color: #1664c2;
 	font-size: 25px;
 }
 
 h2 {
 	font-family: 'Crete Round', serif;
 	font-weight: bold;
-	color: #444;
+	color: #1664c2;
 	font-size: 20px;
 }
 
 h3 { 
 	font-weight: bold;
+	color: #1664c2;
 }
 
 p {
@@ -68,7 +69,7 @@ header .cleanlinkonly .description {
 	}
 
 /* body */
-
+/*LA*/
 .bodybackground {
 	background-image: url("https://images.unsplash.com/photo-1494859802809-d069c3b71a8a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=304a04115ffd171fdcc04a834afff74c&auto=format&fit=crop&w=2550&q=80");
 	background-position: center;
@@ -79,15 +80,21 @@ header .cleanlinkonly .description {
 	background-repeat: no-repeat;
 	background-size: cover;
 */
-
+.bodyfood{
+	background-image: url("https://images.unsplash.com/photo-1495839760557-d150d64b4469?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7cef959884ac7ca5d7dcc8429290f3ed&auto=format&fit=crop&w=2250&q=80");
+	background-position: center;
+	position: relative;
+	background-size: cover;
+}
+/*LA*/
 .substicky {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
 	text-align: center;
-	background-color: #fff;
-	border-bottom: solid #e7e7e7 1px;
-	height: 22px;
+	background-color: #3871AE;
+	/*border-bottom: solid #e7e7e7 1px;*/
+	height: 35px;
 }
 
 .mainnav ul li a:hover {
@@ -104,8 +111,9 @@ header .cleanlinkonly .description {
 .item {
 	width: 100%;
 	min-height: 100px;
-	border: solid #e7e7e7 1px;
+	border: solid #F3F473 3px;
 	margin: 10px auto auto;
+	border-radius: 10px;
 }
 
 .item img {
@@ -149,19 +157,22 @@ header .cleanlinkonly .description {
 	border-top: solid #e7e7e7 1px;
 }
 
-
+/* LA */
 .item .details .description, .item .detailsonly .description, .item .detailsnotonly .description {
 	margin: 20px auto 5px;
 	font-size: 115%;
 	font-weight: bold;
+	font-family: 'Trebuchet MS';
+	color: #1664c2;
 }
 
+/* LA */
 .detailsonly .description, .detailsonly .subdescription {
 	white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; 
+	text-overflow: ellipsis; 
+	color: #1664c2;
 }
-
 
 /* Profile */
 
@@ -189,30 +200,12 @@ header .cleanlinkonly .description {
 #login{
 	margin: 25px auto;
 }
+/*LA*/
 .logincontainer {
 	width: 90%;
 	margin: 25px auto 0;
 	min-height: 500px;
 }
-
-.nsfclogo{
-	position: relative;
-	text-align: center;
-	margin: 5px 10px;
-}
-#NSFCtext{
-	font-weight: bold; 
-	color: #0462D4; 
-	font-size: 25px;
-}
-#whoareu{
-	text-align: center;
-	margin: 15px auto;
-	font-size: 25px;
-	color: #144397;
-	font-family: 'Trebuchet MS';
-}
-
 .logincontainerheader {
 	width: 100%;
 	height: 75px;
@@ -226,15 +219,36 @@ header .cleanlinkonly .description {
 	font-size: 23px;
 	font-family:'Trebuchet MS';
 }
+/*LA*/
+.nsfclogo{
+	position: relative;
+	text-align: center;
+	margin: 5px 10px;
+}
+/*LA*/
+#NSFCtext{
+	font-weight: bold; 
+	color: #0462D4; 
+	font-size: 25px;
+}
+/*LA*/
+#whoareu{
+	text-align: center;
+	margin: 15px auto;
+	font-size: 25px;
+	color: #144397;
+	font-family: 'Trebuchet MS';
+}
 
 /* form */
+/*LA*/
 .loginform{
 	text-align: center;
 	margin: 40px 10px;
 	font-family: 'Trebuchet MS';
 	color: #0462D4;
 }
-
+/*LA*/
 .label {
 	width: 40%;
 	min-width: 90px;
@@ -242,18 +256,18 @@ header .cleanlinkonly .description {
 	display: inline-block;
 	text-align: left;
 }
-
+/*LA*/
 #passwordtext{
 	margin: 15px auto;
 }
-
+/*LA*/
 #username{
 	border: none;
 	border-radius: 13px;
 	padding: 7px;
 	background-color:#AFCAF9;
 }
-
+/*LA*/
 #password{
 	border: none;
 	border-radius: 13px;
@@ -280,6 +294,7 @@ form .field input, form .field select {
 }
 
 /*= button =*/
+/*LA*/
 .buttonlargesubmit{
 	display: block;
 	width: 170px;
@@ -295,7 +310,24 @@ form .field input, form .field select {
 	background-color: #1664C2;
 	cursor: pointer;
 }
-
+.buttonsmallsubmit{
+	display: block;
+	width: 70px;
+	color: #144397;
+	background-color: #76D6DF;
+	margin: 5px auto auto;
+	padding: 10px 0;
+	border-radius: 12px;
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+}
+.buttonsmallsubmit:hover{
+	color: #FFF;
+	background-color: #1664C2;
+	cursor: pointer;
+}
+/*LA*/
 .buttonsignin {
 	width: 70px;
 	color: #144397;
@@ -305,19 +337,19 @@ form .field input, form .field select {
 	border-radius: 12px;
 	text-align: center;
 }
-
+/*LA*/
 .buttonsignin:hover {
 	color: #FFF;
 	background-color: #1664C2;
 	cursor: pointer;
 }
-
+/*LA*/
 .buttonsignup:hover {
 	color: #FFF;
 	background-color:#1664C2;
 	cursor: pointer;
 }
-
+/*LA*/
 .buttonsignup {
 	background-color: #F1EE35;
 	padding: 10px;
@@ -389,8 +421,9 @@ form .field input, form .field select {
 }
 
 .settinglist ul li a:hover {
-	background-color: #444;
 	color: #FFF;
+	background-color: #444;
+	cursor: pointer;
 }
 
 .settinglist .current a, .settinglist .current a:hover {

@@ -1,0 +1,90 @@
+<?php
+include "../../../auth/connection.php";
+
+if (!isset($_SESSION["vendor_managment"])) {
+	header("Location: $r_vend_management_index");
+}
+
+$vendorid = $_SESSION["vendor_storeID"];
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schyler</title>
+	<link rel="stylesheet" type="text/css" href="../../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+	<div class="logincontainerheader">
+		<img src="../../../img/NSFCW_logo.png" style="height:75px;">
+	</div>
+	
+	<div class="substicky">
+		<div class="wrapper">
+			<nav class="mainnav">
+				<?php
+					include "../../nav/mainnav-management-settings.php";
+				?>
+			</nav>
+		</div>
+	</div>
+	<div class="containerboundary">
+		<?php
+		if(isset($_SESSION["profile_updated"]) && $_SESSION["profile_updated"] == "1") {
+			echo "<p id=\"notification\" class=\"message_okay\">Profile updated successfully!</p>";
+			unset($_SESSION['profile_updated']);
+		}
+		?>
+		<script>
+		  setTimeout(function(){
+			document.getElementById('notification').style.display = 'none';
+		  }, 3000);
+		</script>
+		<div class="wrapper">
+			<?php include"queries/getstorebankacc_storeid.php"; ?>
+			<?php
+				if(mysqli_num_rows($result) != 0) { // c.CustomerID, c.FirstName, c.LastName, c.Birthday, c.Email
+					$row=$result->fetch_row();
+					$bankacc = $row[0];
+				?>
+			
+			<div class="settinglist">
+				<ul>
+					<li><a href="updatebankacc.php">Bank Acc: <?php
+					if ($bankacc == NULL) {
+						echo "-";
+					}
+					else {
+						echo $bankacc;
+					}
+					?></a></li>
+					<li style="text-align:center;"><a href="queries/logoutentirely.php">Log Out Entirely</a></li>
+				</ul>
+				<!--<a href=""><div class="buttonlargesubmit" style="text-align: center;">Log Out</div></a>-->
+			</div>
+			
+			<?php
+				}
+				else {
+			?>
+			<a href="queries/logoutentirely.php"><div class="buttonlargesubmit" style="text-align: center;">Log Out Entirely</div></a>
+			<?php		
+				}
+			?>
+			
+		</div>
+	</div>
+	
+	<hr style="border:solid #e7e7e7 1px;">
+	<footer>
+		<div class="wrapper">
+			&copy; 2018 Schyler<br>
+			All rights reserved.</p>
+		</div>
+	</footer>
+</body>
+</html>

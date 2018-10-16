@@ -1,0 +1,117 @@
+<?php
+include "../../../auth/connection.php";
+
+if (!isset($_SESSION["vendor_managment"])) {
+	header("Location: $r_vend_management_index");
+}
+
+if (!isset($_GET["id"]) || $_GET["id"] == null) {
+	header("Location: $r_vend_management_menu_index");
+}
+else {
+	$itemid = $_GET["id"];
+}
+
+$vendorid = $_SESSION["vendor_storeID"];
+$storeid = $vendorid;
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schyler</title>
+	<link rel="stylesheet" type="text/css" href="../../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+	<div class="logincontainerheader">
+		<img src="../../../img/NSFCW_logo.png" style="height:75px;">
+	</div>
+	
+	<div class="substicky">
+		<div class="wrapper">
+			<nav class="mainnav">
+				<?php
+					include "../../nav/mainnav-management-menu.php";
+				?>
+			</nav>
+		</div>
+	</div>
+	<div class="container">
+		<div class="wrapper">
+			<div>
+				<h2>Edit Menu Item</h2>
+				<nav class="mainnav">
+					<?php
+						include "../../nav/subnav-management-menu.php";
+					?>
+					&nbsp;
+				</nav>
+				
+				<?php include "queries/getmenuitemprofile_itemid.php"; ?>
+				<?php
+				if(mysqli_num_rows($result) != 0) { // i.ItemID, i.ItemName, i.Price, i.Status, i.ProfilePictureDIR, i.StoreID
+					$row=$result->fetch_row();
+					$itemid = $row[0];
+					$itemname = $row[1];
+					$price = $row[2];
+					$status = $row[3];
+					$profilepicturedir = $row[4] == NULL ? "../../img/store.png" : $row[4];
+					$storeid = $row[5];
+				?>
+				
+				<form action="queries/setupdatemenuitem.php" method="post">
+					<div class="field">
+						<div class="label"><label for="itemname">Item Name:</label></div>
+						<input type="text" id="itemname" name="itemname" value="<?php echo $itemname; ?>" required>
+					</div>
+					<div class="field">
+						<div class="label"><label for="price">Price:</label></div>
+						<input type="number" id="price" name="price" min="0" step="0.01" value="<?php echo $price; ?>" required>
+					</div>
+					<div class="field">
+						<div class="label"><label for="status">Status:</label></div>
+						<select id="status" name="status">
+							<option value="1" <?php
+							if ($status == 1) {
+								echo "selected";
+							}
+							?>>Available</option>
+							<option value="0" <?php
+							if ($status == 0) {
+								echo "selected";
+							}
+							?>>Unavailable</option>
+						</select>
+					</div>
+					<div class="hiddendetails">
+						<input type="text" id="itemid" name="itemid" value="<?php echo $itemid; ?>">
+					</div>
+					<input type="submit" name="save" value="Save" class="buttonlargesubmit">
+				</form>
+				
+				<?php
+				}
+				else {
+					header("Location: $r_vend_management_menu_index");
+				}
+				?>
+				
+			</div>
+			<br>
+			
+		</div>
+	</div>
+	
+	<hr style="border:solid #e7e7e7 1px;">
+	<footer>
+		<div class="wrapper">
+			&copy; 2018 Schyler<br>
+			All rights reserved.</p>
+		</div>
+	</footer>
+</body>
+</html>

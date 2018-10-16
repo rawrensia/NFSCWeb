@@ -1,3 +1,8 @@
+<?php
+$loginpage = True;
+include "../auth/connection.php";
+unset($loginpage);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +17,9 @@
 <body class="bodybackground">
 	<div class="logincontainer">
 		<div>
+			<?php
+				include "queries/login.php";
+			?>
 			<div class="logincontainerheader">
 				<img src="../img/NSFCW_logo.png" style="height:75px;">
 			</div>
@@ -21,7 +29,7 @@
 				<br><br>
 				<span style="font-weight: bold; font-size:125%;">NSFC Stall Owners / Employee</span>
 				<br><br>
-				<form action="" method="post">
+				<form action="index.php" method="post">
 					<div class="field">
 						<div class="label"><label for="username">Username:</label></div>
 						<input type="text" id="username" name="username" placeholder="Username" required>
@@ -33,16 +41,16 @@
 					<input type="submit" name="login" value="Login" class="buttonlargesubmit">
 				</form>
 				
-				<a href="signup.php">
+				<!--<a href="signup.php">
 					<div class="buttonlargesubmit buttonlargecancel">
 						Sign Up
 					</div>
-				</a>
+				</a>-->
 			</div>
 		</div>
 	</div>
 	<footer>
-		&copy; 2018 Schlyer<br>
+		&copy; 2018 Schyler<br>
 		All rights reserved.</p>
 	</footer>
 </body>
