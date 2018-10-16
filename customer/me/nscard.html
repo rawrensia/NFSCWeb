@@ -5,39 +5,43 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Schyler</title>
 	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
-    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../css/signup.css">
     <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 </head>
-<body>
+<body class=bodybackground>
+	<div class="logincontainerheader">
+			<img src="../../img/nsfc_transp.png" style="height:75px;">			
+	</div>
 	<div class="containerboundary">
 		<div class="wrapper" style="paddingtop:20px;">
-			<h2>NS Card</h2>
+			<h2 style="text-align: center;">NSFC Card</h2>
 			
 			<div class="nscardno">
-				No Card Link
-				
+				Link your card now
 				<form action="" method="post">
 					<div class="field">
 						<div class="label"><label for="serialid">Serial ID:</label></div>
-						<input type="text" id="serialid" name="serialid" required>
+						<input type="text" id="input-field" name="serialid" required>
 					</div>
 			</div>
-			<div class="nscardyes">
-				<a href=""><div class="buttonlargesubmit" style="text-align: center;">Top Up</div></a>
-				<br>
-				Card Balance: $50.00
-			</div>
-			
-			<img src="../../img/nscard.png" style="height:80px;">
-			
-			<div class="nscardno">
-					<input type="submit" name="link" value="Link" class="buttonlargesubmit">
+			<div class="nscardlink">
+					<input type="submit" name="link" value="Link" class="buttonsignin">
+					<a href=""><input type="submit" name="unlink" value="Unlink" class="buttonsignin"></a>
 				</form>
 			</div>
 			<div class="nscardyes">
-				<a href=""><div class="buttonlargesubmit" style="text-align: center;">Unlink</div></a>
+				<br><br>
+				Card Balance: $50.00
+				<br>
+				<img src="../../img/nscard.png" style="height:120px;">
+				<a href=""><div class="buttonsignin" style="text-align: center;">Top Up</div></a>
 			</div>
+			
+			
+			
+			
 			
 		</div>
 	</div>

@@ -16,7 +16,7 @@ h1 {
 h2 {
 	font-family: 'Crete Round', serif;
 	font-weight: bold;
-	color: #1664c2;
+	color: #144397;
 	font-size: 20px;
 }
 
@@ -160,7 +160,9 @@ header .cleanlinkonly .description {
 	height: 30px;
 	text-align: center;
 	line-height: 30px;
-	border-top: solid #e7e7e7 1px;
+	border-top: solid #e7e7e7 2px;
+	color: #BD2239;
+	font-family: 'Trebuchet MS';
 }
 
 /* LA */
@@ -257,9 +259,9 @@ header .cleanlinkonly .description {
 }
 /*LA*/
 .label {
-	width: 40%;
-	min-width: 90px;
-	margin: 40px auto auto;
+
+	
+	margin: 10px auto auto;
 	display: inline-block;
 	text-align: left;
 }
@@ -319,9 +321,9 @@ form .field input, form .field select {
 }
 .buttonsmallsubmit{
 	display: block;
-	width: 70px;
-	color: #144397;
-	background-color: #fff;
+	width: 50px;
+	color: #fff;
+	background-color: #2F58BB;
 	margin: 5px auto auto;
 	padding: 10px 0;
 	border-radius: 12px;
@@ -330,15 +332,15 @@ form .field input, form .field select {
 	font-weight: bold;
 }
 .buttonsmallsubmit:hover{
-	color: #FFF;
-	background-color: #1664C2;
+	color: #2F58BB;
+	background-color: #DCE760;
 	cursor: pointer;
 }
 /*LA*/
 .buttonsignin {
-	width: 70px;
-	color: #144397;
-	background-color: #fff;
+	width: 80px;
+	color: #fff;
+	background-color: #2F58BB;
 	margin: 5px auto auto;
 	padding: 10px 0;
 	border-radius: 12px;
@@ -348,8 +350,8 @@ form .field input, form .field select {
 }
 /*LA*/
 .buttonsignin:hover {
-	color: #FFF;
-	background-color: #1664C2;
+	color: #2F58BB;
+	background-color: #DCE760;
 	cursor: pointer;
 }
 /*LA*/
@@ -372,7 +374,7 @@ form .field input, form .field select {
 .itemlistrecord {
 	width: 98%;
 	border: 2px solid #e7e7e7;
-	padding: 5px;
+	padding: 10px;
     border-radius: 12px;
 	margin-bottom: 4px;
 }
@@ -441,6 +443,31 @@ form .field input, form .field select {
 	color: #FFF;
 }
 
+/* NS Card */
+.nscardno{
+	text-align: center;
+	font-family: 'Trebuchet MS';
+	
+}
+
+.nscardlink{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+.nscardyes{
+	text-align: center;
+	font-family: 'Trebuchet MS';
+}
+
+/* Cart */
+.navigatecart{
+	display: inline-block;
+	text-align: center;
+	width:100%;
+}
+
 
 
 /* footer */
@@ -489,7 +516,7 @@ footer {
 	}
 	
 	form .field {
-		width: 48%;
+		width: 30%;
 		display: inline-block;
 		/*float: left;*/
 	}

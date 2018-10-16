@@ -9,9 +9,9 @@
     <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 </head>
-<body>
+<body class="bodybackground">
 	<div class="logincontainerheader">
-		<img src="../../img/NSFCW_logo.png" style="height:75px;">
+		<img src="../../img/nsfc_transp.png" style="height:75px;">
 	</div>
 	
 	<div class="substicky">
@@ -26,7 +26,7 @@
 	<div class="containerboundary">
 		<div class="wrapper">
 			<div>
-				
+				<br>
 				<h2>Cart</h2>
 				
 				<form action="" method="post">
@@ -89,12 +89,12 @@
 					<div class="hiddendetails">
 						<input type="text" name="clientid" value="<?php //echo $clientid;?>">
 					</div>
-					<input type="submit" name="checkout" value="Check Out" class="buttonlargesubmit">
+					
 				</form>
-				
-				<br>
-				
-				<a href="pasttransactions.php"><div class="buttonlargesubmit" style="text-align: center;">Past Transactions</div></a>
+				<div class="navigatecart">
+						<input type="submit" name="checkout" value="Check Out" class="buttonsignin">
+						<a href="pasttransactions.php"><input type="submit" name="pasttrans" value="History" class="buttonsignin"></a>
+						</div>
 				
 			</div>
 			
