@@ -206,7 +206,8 @@ header .cleanlinkonly .description {
 
 /*= login =*/
 #login{
-	margin: 25px auto;
+	margin: 15px auto;
+	text-align: center;
 }
 /*LA*/
 .logincontainer {
@@ -375,6 +376,26 @@ form .field input, form .field select {
 	width: 50px;
 	margin: 20px auto;
 	border-radius: 12px;
+}
+
+.buttonlarge{
+	width:200px;
+	display: inline-block;
+	white-space: normal;
+	color: #144397;
+	background-color: #02b8dd;
+	margin: 15px auto auto;
+	padding: 20px 0;
+	border-radius: 12px;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Trebuchet MS';
+}
+
+.buttonlarge:hover{
+	color: #FFF;
+	background-color:#1664C2;
+	cursor: pointer;
 }
 
 
