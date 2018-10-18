@@ -31,7 +31,7 @@ p {
 }
 
 .wrapper {
-	margin: 0 15px;
+	margin: 0px 15px;
 }
 
 .hiddendetails {
@@ -79,7 +79,8 @@ header .cleanlinkonly .description {
 }
 
 .bodyfood{
-	background-image: url("https://images.unsplash.com/photo-1495839760557-d150d64b4469?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7cef959884ac7ca5d7dcc8429290f3ed&auto=format&fit=crop&w=2250&q=80");
+	/*background-image: url("https://images.unsplash.com/photo-1495839760557-d150d64b4469?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7cef959884ac7ca5d7dcc8429290f3ed&auto=format&fit=crop&w=2250&q=80");*/
+	background-image:url("https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c9443baefd581d4e532b6d4f1e7879be&auto=format&fit=crop&w=1650&q=80");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -448,15 +449,17 @@ form .field input, form .field select {
 
 /* Me Setting List */
 .settinglist {
-	background-color: #fff;
+	background-color: rgba(197, 239, 246, 0.7);
 	line-height: 28px;
 	border-radius: 8px;
 	margin: 10px auto auto;
+	font-family: 'Trebuchet MS';
+	color: #144397;
 }
 
 .settinglist ul li {
 	height: 30px;	
-	border-bottom: 1px solid #e7e7e7;
+	border-bottom: 2px solid #e7e7e7;
 }
 
 .settinglist ul li a {
