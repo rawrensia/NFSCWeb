@@ -27,14 +27,14 @@ $storeid = $vendorid;
 	<div class="substicky">
 		<div class="wrapper">
 			<nav class="mainnav">
-				<?php
+				<!--<?php
 					include "../../nav/mainnav-management-menu.php";
-				?>
+				?>-->
 			</nav>
 		</div>
 	</div>
 	<div class="container">
-		<?php
+		<!--<?php
 		if(isset($_SESSION["item_added_to_menu"]) && $_SESSION["item_added_to_menu"] == "1") {
 			echo "<p id=\"notification\" class=\"message_okay\">Item added to menu successfully!</p>";
 			unset($_SESSION['item_added_to_menu']);
@@ -48,17 +48,17 @@ $storeid = $vendorid;
 		  setTimeout(function(){
 			document.getElementById('notification').style.display = 'none';
 		  }, 3000);
-		</script>
+		</script>-->
 		<div class="wrapper">
 			<div>
 				<h2>Menu</h2>
 				<nav class="mainnav">
-					<?php
+					<!--<?php
 						include "../../nav/subnav-management-menu-list.php";
-					?>
+					?>-->
 					&nbsp;
 				</nav>
-				<?php include "queries/getmenulist.php"; ?>
+				<!--<?php include "queries/getmenulist.php"; ?>
 				<?php
 				if(mysqli_num_rows($result) != 0) {
 				?>
@@ -71,16 +71,16 @@ $storeid = $vendorid;
 					$status = $row[4];
 					
 					$href = "editmenuitem.php?id=" . $itemid;
-				?>
+				?>-->
 				<div class="cleanlink">
 					
 					<div class="item">
 						<div class="hiddendetails">
-							<?php echo $itemid;?>
+							<!--<?php echo $itemid;?>-->
 						</div>
 						<a href="<?php echo $href;?>">
 							<div class="detailsnotonlyimg">
-								<img src="<?php echo $profilepicturedir;?>" alt="Picture of Food">
+								<img src="../../../img/food.png" alt="Picture of Food">
 							</div>
 						</a>
 						<div class="detailsnotonly">
@@ -102,7 +102,7 @@ $storeid = $vendorid;
 					</div>
 					
 				</div>
-				<?php
+				<!--<?php
 					}
 				}
 				else {
@@ -112,7 +112,7 @@ $storeid = $vendorid;
 					</div>
 					";
 				}
-				?>
+				?>-->
 				
 			</div>
 			<br>
